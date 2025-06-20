@@ -1,5 +1,8 @@
 # mtu-xsens-imu-Sensor
 
+## Project Objective
+Predict sensor-based temperature and magnetic field values that are influenced by device behavior (movement, frequency, noise, etc.)
+
 Metrics for Temperature:
 - Mean Squared Error (MSE):0.0025
 - Root Mean Squared Error (RMSE):0.0501
