@@ -17,7 +17,7 @@ Metrics for Mag_Y:
 - Root Mean Squared Error (RMSE):0.0107
 - Mean Absolute Error (MAE):0.0001
 - R-squared (R2):0.9847
-- 
+  
 Metrics for Mag_Z:
 - Mean Squared Error (MSE):0.0001
 - Root Mean Squared Error (RMSE):0.0116
