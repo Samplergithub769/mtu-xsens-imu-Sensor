@@ -50,3 +50,34 @@ To ensure raw, unaltered sensor data, the following features were disabled:
 - In-run Compass Calibration (ICC)
 
 This configuration captures raw sensor outputs for accurate modeling of environmental effects.
+
+**Sampling & Conditions:**
+
+Data was collected at three sampling frequencies:
+
+- 25 Hz
+
+- 50 Hz
+
+- 100 Hz
+
+For each frequency, two environmental conditions were tested:
+
+- Clean Environment — Minimal movement, stable surroundings
+
+- Noisy Environment — Introduced mechanical movement or environmental interference
+
+This resulted in six datasets for robust comparative analysis.
+
+**Recorded Features:**
+
+| Feature                         | Description                                               |
+| ------------------------------- | --------------------------------------------------------- |
+| `SampleTimeFine`                | High-resolution timestamp for each sample                 |
+| `PacketCounter`                 | Sequential packet ID (for detecting dropped/missing data) |
+| `Acc_X`, `Acc_Y`, `Acc_Z`       | Standard-resolution acceleration (m/s²)                   |
+| `AccHR_X`, `AccHR_Y`, `AccHR_Z` | High-resolution acceleration (g)                          |
+| `MAG_X`, `MAG_Y`, `MAG_Z`       | Magnetic field readings (µT)                              |
+| `Roll`, `Pitch`, `Yaw`          | Orientation angles (degrees)                              |
+| `Temperature`                   | Sensor temperature (°C)                                   |
+
