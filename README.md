@@ -17,23 +17,23 @@ Onboard Sensor Fusion (Roll, Pitch, Yaw)
 
 **Device & Software Configuration:**
 
-Device ID: 0388A23E
+- Device ID: 0388A23E
 
-Product Code: MTi-3-8A7G6
+- Product Code: MTi-3-8A7G6
 
-Firmware Version: 1.20.1
+- Firmware Version: 1.20.1
 
-Hardware Version: 5.0.0
+- Hardware Version: 5.0.0
 
-Filter Profile: general (50.10)
+- Filter Profile: general (50.10)
 
-Coordinate System: ENU (East-North-Up)
+- Coordinate System: ENU (East-North-Up)
 
-Software Used:
+- Software Used:
 
-- MT Manager: v2025.0.0
+  - MT Manager: v2025.0.0
 
-- Xsens Device API (XDA): v2025.0.0 (Build 241121001, Rev 1732180523)
+  - Xsens Device API (XDA): v2025.0.0 (Build 241121001, Rev 1732180523)
 
 **Disabled Preprocessing & Calibration:**
 
