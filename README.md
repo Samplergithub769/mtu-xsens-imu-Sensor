@@ -17,3 +17,22 @@ Onboard Sensor Fusion (Roll, Pitch, Yaw)
 
 It’s widely used in embedded and real-time applications where size, power, and accuracy are critical.
 
+Device & Software Configuration
+
+Device ID: 0388A23E
+
+Product Code: MTi-3-8A7G6
+
+Firmware Version: 1.20.1
+
+Hardware Version: 5.0.0
+
+Filter Profile: general (50.10)
+
+Coordinate System: ENU (East-North-Up)
+
+Software Used:
+
+MT Manager: v2025.0.0
+
+Xsens Device API (XDA): v2025.0.0 (Build 241121001, Rev 1732180523)
