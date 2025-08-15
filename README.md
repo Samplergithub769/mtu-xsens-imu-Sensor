@@ -88,6 +88,7 @@ The analysis and modeling were implemented in Python, widely adopted for scienti
 
 ### Noise Characterization
 To understand the characteristics of sensor noise, two methods were used:
+
 **1. Power Spectral density**
 
 
