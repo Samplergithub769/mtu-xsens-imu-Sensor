@@ -70,14 +70,10 @@ For each frequency, two environmental conditions were tested:
 This resulted in six datasets for robust comparative analysis.
 
 **Recorded Features:**
-
-| Feature                         | Description                                               |
-| ------------------------------- | --------------------------------------------------------- |
-| `SampleTimeFine`                | High-resolution timestamp for each sample                 |
-| `PacketCounter`                 | Sequential packet ID (for detecting dropped/missing data) |
-| `Acc_X`, `Acc_Y`, `Acc_Z`       | Standard-resolution acceleration (m/s²)                   |
-| `AccHR_X`, `AccHR_Y`, `AccHR_Z` | High-resolution acceleration (g)                          |
-| `MAG_X`, `MAG_Y`, `MAG_Z`       | Magnetic field readings (µT)                              |
-| `Roll`, `Pitch`, `Yaw`          | Orientation angles (degrees)                              |
-| `Temperature`                   | Sensor temperature (°C)                                   |
-
+1. SampleTimeFine: High-resolution timestamp for each sample
+2. PacketCounter: Sequential packet ID (for detecting dropped/missing data)
+3. Acc_X, Acc_Y, Acc_Z: Standard-resolution acceleration (m/s²)
+4. AccHR_X, AccHR_Y, AccHR_Z: High-resolution acceleration (g)
+5. MAG_X, MAG_Y, MAG_Z: Magnetic field readings (µT)
+6. Roll, Pitch, Yaw: Orientation angles (degrees)
+7. Temperature: Sensor temperature (°C)
