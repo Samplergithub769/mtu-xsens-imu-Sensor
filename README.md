@@ -77,3 +77,14 @@ This resulted in six datasets for robust comparative analysis.
 5. MAG_X, MAG_Y, MAG_Z: Magnetic field readings (µT)
 6. Roll, Pitch, Yaw: Orientation angles (degrees)
 7. Temperature: Sensor temperature (°C)
+
+### Tools and Libraries used:
+The analysis and modeling were implemented in Python, widely adopted for scientific computing due to its open-source ecosystem and extensive library support.
+- Pandas and NumPy were used for structured data handling and high-performance numerical computations.
+- Matplotlib and Seaborn facilitated time-series visualization.
+- SciPy provided signal processing and statistical tools, including linregress for regression diagnostics.
+- Scikit-learn supported machine learning workflows, including model training, scaling, and evaluation metrics.
+- Joblib was used for efficient model serialization to enable reuse in deployment stages.
+
+
+
