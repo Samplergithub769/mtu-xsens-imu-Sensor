@@ -15,9 +15,7 @@ Temperature Sensor
 
 Onboard Sensor Fusion (Roll, Pitch, Yaw)
 
-It’s widely used in embedded and real-time applications where size, power, and accuracy are critical.
-
-Device & Software Configuration
+**Device & Software Configuration:**
 
 Device ID: 0388A23E
 
@@ -33,6 +31,22 @@ Coordinate System: ENU (East-North-Up)
 
 Software Used:
 
-MT Manager: v2025.0.0
+- MT Manager: v2025.0.0
 
-Xsens Device API (XDA): v2025.0.0 (Build 241121001, Rev 1732180523)
+- Xsens Device API (XDA): v2025.0.0 (Build 241121001, Rev 1732180523)
+
+**Disabled Preprocessing & Calibration:**
+
+To ensure raw, unaltered sensor data, the following features were disabled:
+
+- Orientation Smoother
+
+- Position/Velocity Smoother
+
+- Continuous Zero Rotation Update
+
+- Active Heading Stabilization (AHS)
+
+- In-run Compass Calibration (ICC)
+
+This configuration captures raw sensor outputs for accurate modeling of environmental effects.
