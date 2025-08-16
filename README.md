@@ -112,11 +112,7 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 <img width="700" height="222" alt="image" src="https://github.com/user-attachments/assets/90f20b07-fb77-40dc-a2a3-cd77920358ad" />
 
 Where:
-- x[n]: Segment of the signal
-- w[n]: Window function (hann window)
-- <img width="207" height="58" alt="image" src="https://github.com/user-attachments/assets/0dd0691c-fe6d-4aa5-8641-22502ee188fa" /> = window power normalization factor, 1/N​ means we are computing the average power of the window function.
-- fs: Sampling frequency
-- |FFT|^2: Square magnitude of FFT (Fast Fourier Transform) output = power at frequency bins
+<img width="936" height="262" alt="image" src="https://github.com/user-attachments/assets/28fed02b-8082-4cfd-9cc8-7fe25d82e3d0" />
 
 **Output:**
 
