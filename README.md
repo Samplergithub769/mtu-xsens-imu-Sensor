@@ -93,8 +93,29 @@ To understand the characteristics of sensor noise, two methods were used:
 Power Spectral Density (PSD) is a function that describes how the power of a signal is distributed over frequency. It essentially shows how much power a signal has at different frequencies, making it useful for analyzing signals that extend over time, especially random or periodic signals.
 
 **Welch Method**
+
 Welch's method is used to estimate the Power Spectral Density (PSD) of a signal, i.e., how the power (or variance) of a signal is distributed over frequency.
 
+Welch’s method improves PSD estimation by:
+
+- Segmenting the signal into overlapping windows.
+
+- Applying a window function (e.g., Hann) to reduce spectral leakage.
+
+- Computing the FFT for each segment.
+
+- Averaging the squared magnitudes to reduce variance.
+
+This approach yields a smoother, more reliable PSD compared to a single FFT.
+
+<img width="700" height="222" alt="image" src="https://github.com/user-attachments/assets/90f20b07-fb77-40dc-a2a3-cd77920358ad" />
+
+Where:
+	- x[n]: Segment of the signal
+	- w[n]: Window function (hann window)
+	- Normalized window power: U=1/L ∑▒〖w[n]〗^2 , where w[n] is the Hann window
+	- fs: Sampling frequency
+	- 〖|FFT|〗^2: Square magnitude of FFT (Fast Fourier Transform) output = power at frequency bins
 
 
 
