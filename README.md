@@ -116,10 +116,15 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 <img width="693" height="242" alt="image" src="https://github.com/user-attachments/assets/c61cf347-be50-45c2-9353-2ce45207bc5c" />
 
 **Output:**
+
 ![Uploading image.png…]()
+
 ![Uploading image.png…]()
+
 ![Uploading image.png…]()
+
 ![Uploading image.png…]()
+
 ![Uploading image.png…]()
 
 
