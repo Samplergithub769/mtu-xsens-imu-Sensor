@@ -116,7 +116,7 @@ Where:
 - w[n]: Window function (hann window)
 - Normalized window power: U=1/L ∑[w[n]^2 , where w[n] is the Hann window
 - fs: Sampling frequency
-- 〖|FFT|〗^2: Square magnitude of FFT (Fast Fourier Transform) output = power at frequency bins
+- |FFT|^2: Square magnitude of FFT (Fast Fourier Transform) output = power at frequency bins
 
 **Output:**
 
