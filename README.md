@@ -112,12 +112,13 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 <img width="700" height="222" alt="image" src="https://github.com/user-attachments/assets/90f20b07-fb77-40dc-a2a3-cd77920358ad" />
 
 Where:
-	- x[n]: Segment of the signal
-	- w[n]: Window function (hann window)
-	- Normalized window power: U=1/L ∑▒〖w[n]〗^2 , where w[n] is the Hann window
-	- fs: Sampling frequency
-	- 〖|FFT|〗^2: Square magnitude of FFT (Fast Fourier Transform) output = power at frequency bins
+- x[n]: Segment of the signal
+- w[n]: Window function (hann window)
+- Normalized window power: U=1/L ∑▒〖w[n]〗^2 , where w[n] is the Hann window
+- fs: Sampling frequency
+- 〖|FFT|〗^2: Square magnitude of FFT (Fast Fourier Transform) output = power at frequency bins
 
 **Output:**
+
 
 
