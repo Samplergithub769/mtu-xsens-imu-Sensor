@@ -127,9 +127,15 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 <img width="855" height="420" alt="image" src="https://github.com/user-attachments/assets/76bc18fd-c983-404f-b3e3-08481d4f80f6" />
 
+**Key Observations:**
 
+- Pink noise (1/f behavior) is dominant in the X and Y axes across all sampling rates.
 
+- Z-axis shows more white noise characteristics, suggesting less long-term correlation in that direction.
 
+- Increasing sampling rate (25 → 50 → 100 Hz) does not fundamentally change the noise type, but makes the slope estimation more stable.
+
+**1. Allan Variance**
 
 
 
