@@ -115,7 +115,8 @@ Where:
 - x[n]: Segment of the signal
 - w[n]: Window function (hann window)
   
-- <img width="580" height="60" alt="image" src="https://github.com/user-attachments/assets/323f1ad7-06c4-47dd-b490-7f9c53b9cfa4" /> 
+- <img width="580" height="60" alt="image" src="https://github.com/user-attachments/assets/323f1ad7-06c4-47dd-b490-7f9c53b9cfa4" />
+
 - fs: Sampling frequency
 - |FFT|^2: Square magnitude of FFT (Fast Fourier Transform) output = power at frequency bins
 
