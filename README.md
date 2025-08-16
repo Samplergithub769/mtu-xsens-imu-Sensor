@@ -119,13 +119,6 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 ![Uploading image.png…]()
 
-![Uploading image.png…]()
-
-![Uploading image.png…]()
-
-![Uploading image.png…]()
-
-![Uploading image.png…]()
 
 
 
