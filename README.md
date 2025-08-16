@@ -109,13 +109,14 @@ Welch’s method improves PSD estimation by:
 
 This approach yields a smoother, more reliable PSD compared to a single FFT.
 
-Welch’s Method (as implemented in code):
+**Welch’s Method (as implemented in code):**
 
 <img width="938" height="382" alt="image" src="https://github.com/user-attachments/assets/22e6954d-4b32-4093-9e4c-ce50387e38f6" />
 
 <img width="693" height="242" alt="image" src="https://github.com/user-attachments/assets/c61cf347-be50-45c2-9353-2ce45207bc5c" />
 
 **Output:**
+
 
 
 
