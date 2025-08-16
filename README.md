@@ -90,6 +90,7 @@ The analysis and modeling were implemented in Python, widely adopted for scienti
 To understand the characteristics of sensor noise, two methods were used:
 
 **1. Power Spectral density**
+
 Power Spectral Density (PSD) is a function that describes how the power of a signal is distributed over frequency. It essentially shows how much power a signal has at different frequencies, making it useful for analyzing signals that extend over time, especially random or periodic signals.
 
 **Welch Method**
@@ -117,5 +118,6 @@ Where:
 	- fs: Sampling frequency
 	- 〖|FFT|〗^2: Square magnitude of FFT (Fast Fourier Transform) output = power at frequency bins
 
+**Output:**
 
 
