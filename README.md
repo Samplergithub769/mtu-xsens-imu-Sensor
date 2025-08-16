@@ -113,7 +113,7 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 Where:
 
-<img width="936" height="262" alt="image" src="https://github.com/user-attachments/assets/28fed02b-8082-4cfd-9cc8-7fe25d82e3d0" />
+<img width="981" height="273" alt="image" src="https://github.com/user-attachments/assets/f3ff71d0-9561-4f73-bf68-ac1d55aad4f7" />
 
 **Output:**
 
