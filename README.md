@@ -351,7 +351,7 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 
 **Temperature:**
 - Points lie almost exactly on the line.
-- Indicates near-perfect predictions (R² ≈ 1.0 as seen earlier).
+- Indicates near-perfect predictions (R² ≈ 1.0).
   
 **Mag_X:**
 - Predictions follow the line closely but with some spread.
@@ -363,7 +363,8 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 
 **Mag_Z:**
 - Predictions are mostly close to the line, but noticeable scatter and outliers appear.
-- Explains why R² is lower compared to Temperature and Mag_X (≈ 0.9809).
+- R² is lower compared to Temperature and Mag_X (≈ 0.9809).
+
 
 ### actual vs. predicted values(By RandomForestRegressor model)
 <img width="921" height="343" alt="image" src="https://github.com/user-attachments/assets/8e6f8a0f-7587-40da-8af2-f457e317fbc5" />
