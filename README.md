@@ -312,20 +312,20 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 ### Calculate evaluation metrics
 1. MSE (Mean Squared Error):
    
-Average squared difference between predicted and actual values. Lower = better.
+- Average squared difference between predicted and actual values. Lower = better.
 
 3. RMSE (Root Mean Squared Error):
    
-Square root of MSE. Easier to interpret because it has the same unit as the target variable.
+- Square root of MSE. Easier to interpret because it has the same unit as the target variable.
 
 5. MAE (Mean Absolute Error):
    
-Average absolute difference between predicted and actual values. Lower = better.
+- Average absolute difference between predicted and actual values. Lower = better.
 
 7. R² (Coefficient of Determination):
    
-Measures how well the model explains variance in the data.
+- Measures how well the model explains variance in the data.
 
-- 1.0 = perfect prediction
+  - 1.0 = perfect prediction
   
-- 0 = no better than mean prediction
+  - 0 = no better than mean prediction
