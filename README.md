@@ -192,7 +192,18 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
   - Plot fitted line (loglog) on top of PSD.
    
 **Output:**
+
 <img width="871" height="903" alt="image" src="https://github.com/user-attachments/assets/ddae4b24-1073-4994-b871-86963926b321" />
+
+<img width="911" height="911" alt="image" src="https://github.com/user-attachments/assets/0df5c81f-1014-4f2d-bb5a-80948a53fb64" />
+
+<img width="845" height="906" alt="image" src="https://github.com/user-attachments/assets/bebac199-dc7d-4536-bff0-e4728955e6d5" />
+
+<img width="846" height="907" alt="image" src="https://github.com/user-attachments/assets/4e32f85a-7d79-4c67-8144-67a31b80362a" />
+
+<img width="881" height="470" alt="image" src="https://github.com/user-attachments/assets/e08c9d7c-25a4-4ee3-a726-72a8499322ad" />
+
+
 
 
 
