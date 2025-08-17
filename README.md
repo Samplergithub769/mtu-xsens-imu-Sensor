@@ -115,6 +115,75 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 <img width="693" height="242" alt="image" src="https://github.com/user-attachments/assets/c61cf347-be50-45c2-9353-2ce45207bc5c" />
 
+**3. Noise classification function**
+
+<img width="296" height="191" alt="image" src="https://github.com/user-attachments/assets/5e165fd7-2418-4d77-8566-3a71d5adcccd" />
+
+- Takes the slope of the PSD in log–log scale.
+
+- Uses thresholds to decide the noise type:
+
+  - Flat slope ≈ 0, White noise.
+
+  - Slope ≈ -1, Pink noise.
+
+  - Slope ≈ -2, Brownian noise.
+    
+<img width="487" height="160" alt="image" src="https://github.com/user-attachments/assets/8601c11c-6058-4aab-9a48-303fc10f5a7f" />
+
+- Selects frequency bins within [fmin, fmax].
+
+- Converts both frequency and PSD into log10 scale.
+
+- Fits a straight line:
+
+  - log10(𝑃𝑆𝐷) = 𝑠𝑙𝑜𝑝𝑒.log10(𝑓) + 𝑖𝑛𝑡𝑒𝑟𝑐𝑒pt
+
+- Returns:
+
+ - slope: spectral slope
+
+ - intercept: y-intercept of the fitted line
+
+ - r²: goodness of fit
+
+<img width="493" height="109" alt="image" src="https://github.com/user-attachments/assets/aaed2fb5-8c0c-4ee2-894a-b244ab184032" />
+
+- Defines three frequency regions for slope fitting:
+
+  - Low (very slow drift)
+
+  - Mid (often pink noise)
+
+  - High (white noise region up to Nyquist = fs/2)
+
+  <img width="437" height="203" alt="image" src="https://github.com/user-attachments/assets/ed1153a9-fc2a-4c03-93ce-0347477e6b19" />
+
+  - Loops through each dataset and each axis (X, Y, Z).
+
+  - Skips axis if it’s missing in the DataFrame.
+    
+  - Extracts signal from DataFrame.
+    
+  - Removes DC offset (mean).
+    
+  - Chooses segment length (nperseg) for Welch’s method:
+    
+  - Default = 1024 or a quarter of data length.
+    
+  - If too short, use half of the data length.
+
+  - Calls manual Welch implementation.
+
+  - Returns:
+
+   - f: frequency bins
+     
+   - Pxx: estimated power spectral density
+
+<img width="707" height="258" alt="image" src="https://github.com/user-attachments/assets/0879ccb2-0522-4bd0-88d9-b9ab897d6c1c" />
+
+
 **Output:**
 
 
