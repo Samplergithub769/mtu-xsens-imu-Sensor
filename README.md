@@ -249,32 +249,55 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 - AccHR_X
 
-  - Low slope ≈ -0.94, pink noise.
+  - Low slope = -0.94, pink noise.
 
-  - Mid slope ≈ -2.32, Brownian noise (1/f²) strong drift at mid freq.
+  - Mid slope = -2.32, Brownian noise (1/f²) strong drift at mid freq.
 
-  - High slope ≈ -0.53, pink noise.
+  - High slope = -0.53, pink noise.
 
   - Clear sign of random walk component.
     
 - AccHR_Y
 
-  - Low slope ≈ -1.09 → pink noise.
+  - Low slope = -1.09, pink noise.
 
-  - Mid slope ≈ -2.20 → Brownian noise.
+  - Mid slope = -2.20, Brownian noise.
 
-  - High slope ≈ -0.42 → closer to white noise.
+  - High slope = -0.42, closer to white noise.
 
   - Again: drift in mid band, random noise at high freq.
 
 - AccHR_Z
 
-  - Low slope ≈ 0.17 → white noise (flat).
+  - Low slope = 0.17, white noise (flat).
 
-  - Mid slope ≈ -1.97 → Brownian noise (random drift).
+  - Mid slope = -1.97, Brownian noise (random drift).
 
-  - High slope ≈ 0.04 → white noise again.
+  - High slope = 0.04, white noise again.
 
   - Very mixed behavior, but drift dominates mid frequencies.
+
+### Combine clean and noisy data with labels and frequency information
+
+<img width="501" height="582" alt="image" src="https://github.com/user-attachments/assets/b81a167f-6422-44d2-bb39-8b36d2286c10" />
+
+**Output:**
+
+<img width="1062" height="1074" alt="image" src="https://github.com/user-attachments/assets/f0806061-4678-42f8-a2b6-99b73295ce0c" />
+
+### Define the features (X) and the target variables (y) for the model
+
+<img width="903" height="98" alt="image" src="https://github.com/user-attachments/assets/e9bec38b-1c4b-41de-b2a0-ffb7dab3d686" />
+
+### Split the combined dataset into training and testing sets
+
+<img width="822" height="199" alt="image" src="https://github.com/user-attachments/assets/f6c5067a-5114-45ec-b383-412e80eb70ee" />
+
+### Import RandomForestRegressor model
+
+
+
+
+
  
 
