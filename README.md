@@ -293,6 +293,10 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 <img width="822" height="199" alt="image" src="https://github.com/user-attachments/assets/f6c5067a-5114-45ec-b383-412e80eb70ee" />
 
+- train_test_split splits into training (80%) and test (20%) sets.
+
+- random_state=42 ensures reproducibility (same split each time).
+
 ### Import RandomForestRegressor model
 
 
