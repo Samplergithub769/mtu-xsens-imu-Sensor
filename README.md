@@ -141,11 +141,11 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 - Returns:
 
- - slope: spectral slope
+  - slope: spectral slope
 
- - intercept: y-intercept of the fitted line
+  - intercept: y-intercept of the fitted line
 
- - r²: goodness of fit
+  - r²: goodness of fit
 
 <img width="493" height="109" alt="image" src="https://github.com/user-attachments/assets/aaed2fb5-8c0c-4ee2-894a-b244ab184032" />
 
