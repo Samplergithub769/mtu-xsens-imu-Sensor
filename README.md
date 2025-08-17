@@ -225,25 +225,56 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
     
 2. 50 Hz Sampling
 
-  - AccHR_X
+- AccHR_X
 
-    - Low slope = -1.58, Brownian noise (1/f²) at low freq (drift).
+  - Low slope = -1.58, Brownian noise (1/f²) at low freq (drift).
 
-    - Mid slope = -0.93, pink noise.
+  - Mid slope = -0.93, pink noise.
 
-    - High slope = -0.48, tending to white noise.
+  - High slope = -0.48, tending to white noise.
 
-    - Interpretation: Long-term drift + short-term randomness.
+   - Interpretation: Long-term drift + short-term randomness.
 
- - AccHR_Y
+- AccHR_Y
 
-   - Slopes = -1.3 to -1.4, pink noise dominates (strong correlation).
+  - Slopes = -1.3 to -1.4, pink noise dominates (strong correlation).
 
-   - High freq slope = -0.95, still pink noise.
+  - High freq slope = -0.95, still pink noise.
 
 - AccHR_Z
 
-   - Slopes = -0.99 to -0.51, all pink noise with weak correlation at higher band.   
+  - Slopes = -0.99 to -0.51, all pink noise with weak correlation at higher band.
+      
+3. 100 Hz Sampling
 
+- AccHR_X
 
+  - Low slope ≈ -0.94, pink noise.
+
+  - Mid slope ≈ -2.32, Brownian noise (1/f²) strong drift at mid freq.
+
+  - High slope ≈ -0.53, pink noise.
+
+  - Clear sign of random walk component.
+    
+- AccHR_Y
+
+  - Low slope ≈ -1.09 → pink noise.
+
+  - Mid slope ≈ -2.20 → Brownian noise.
+
+  - High slope ≈ -0.42 → closer to white noise.
+
+  - Again: drift in mid band, random noise at high freq.
+
+- AccHR_Z
+
+  - Low slope ≈ 0.17 → white noise (flat).
+
+  - Mid slope ≈ -1.97 → Brownian noise (random drift).
+
+  - High slope ≈ 0.04 → white noise again.
+
+  - Very mixed behavior, but drift dominates mid frequencies.
+ 
 
