@@ -203,7 +203,7 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 <img width="881" height="470" alt="image" src="https://github.com/user-attachments/assets/e08c9d7c-25a4-4ee3-a726-72a8499322ad" />
 
-Key Observations:
+**Key Observations:**
 
 1. 25 Hz Sampling
 
