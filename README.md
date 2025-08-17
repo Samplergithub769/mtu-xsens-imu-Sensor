@@ -135,11 +135,6 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 - Increasing sampling rate (25 → 50 → 100 Hz) does not fundamentally change the noise type, but makes the slope estimation more stable.
 
-**1. Allan Variance**
-
-Allan variance measures how the average of a time series changes with different averaging times tau τ. It reveals stability and dominant noise types (white noise, flicker/bias instabil-ity, random walk) as a function of time scale.
-
-
 
 
 
