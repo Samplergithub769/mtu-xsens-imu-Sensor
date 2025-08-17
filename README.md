@@ -205,7 +205,7 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 **Key Observations:**
 
-1. 25 Hz Sampling
+**1. 25 Hz Sampling**
 
 - AccHR_X & AccHR_Y
 
@@ -223,7 +223,7 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
   - So Z-axis mixes both pink + white noise.
     
-2. 50 Hz Sampling
+**2. 50 Hz Sampling**
 
 - AccHR_X
 
@@ -245,7 +245,7 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
   - Slopes = -0.99 to -0.51, all pink noise with weak correlation at higher band.
       
-3. 100 Hz Sampling
+**3. 100 Hz Sampling**
 
 - AccHR_X
 
