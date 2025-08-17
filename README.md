@@ -310,22 +310,35 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 - fit(X_train, y_train): Trains the model on input features (X_train) and target values (y_train).
 
 ### Calculate evaluation metrics
-1. MSE (Mean Squared Error):
-   
-- Average squared difference between predicted and actual values. Lower = better.
+<img width="293" height="363" alt="image" src="https://github.com/user-attachments/assets/c03bb9d6-40b1-477e-9c8a-35d6e52d0529" />
 
-3. RMSE (Root Mean Squared Error):
-   
-- Square root of MSE. Easier to interpret because it has the same unit as the target variable.
+**1. MSE (Mean Squared Error):**
+   Average squared difference between predicted and actual values. Lower = better.
 
-5. MAE (Mean Absolute Error):
-   
-- Average absolute difference between predicted and actual values. Lower = better.
+**2. RMSE (Root Mean Squared Error):**
+   Square root of MSE. Easier to interpret because it has the same unit as the target variable.
 
-7. R² (Coefficient of Determination):
-   
-- Measures how well the model explains variance in the data.
+**3. MAE (Mean Absolute Error):**
+   Average absolute difference between predicted and actual values. Lower = better.
 
-  - 1.0 = perfect prediction
-  
-  - 0 = no better than mean prediction
+**4. R² (Coefficient of Determination):**
+   Measures how well the model explains variance in the data.
+   - 1.0 = perfect prediction
+   - 0 = no better than mean prediction
+**Results shown:**
+
+**Temperature:** 
+- MSE = 0.0001, RMSE ≈ 0.0077, MAE = 0.0002, R² = 1.0000
+- Excellent fit (almost perfect).
+
+**Mag_X:**
+- MSE = 0.0002, RMSE ≈ 0.0130, MAE = 0.0002, R² ≈ 0.9891
+- Very high accuracy.
+
+**Mag_Y:**
+- MSE = 0.0005, RMSE ≈ 0.0215, MAE = 0.0002, R² ≈ 0.9312
+- Still very good but slightly less accurate than Mag_X.
+
+**Mag_Z:**
+- MSE = 0.0002, RMSE ≈ 0.0153, MAE = 0.0002, R² ≈ 0.9809
+- Excellent performance.
