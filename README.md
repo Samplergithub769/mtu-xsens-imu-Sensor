@@ -157,7 +157,7 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
   - High (white noise region up to Nyquist = fs/2)
 
-  <img width="437" height="203" alt="image" src="https://github.com/user-attachments/assets/ed1153a9-fc2a-4c03-93ce-0347477e6b19" />
+<img width="437" height="203" alt="image" src="https://github.com/user-attachments/assets/ed1153a9-fc2a-4c03-93ce-0347477e6b19" />
 
   - Loops through each dataset and each axis (X, Y, Z).
 
@@ -177,9 +177,9 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
   - Returns:
 
-   - f: frequency bins
+    - f: frequency bins
      
-   - Pxx: estimated power spectral density
+    - Pxx: estimated power spectral density
 
 <img width="707" height="258" alt="image" src="https://github.com/user-attachments/assets/0879ccb2-0522-4bd0-88d9-b9ab897d6c1c" />
 
