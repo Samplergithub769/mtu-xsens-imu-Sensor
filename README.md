@@ -183,6 +183,14 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 <img width="707" height="258" alt="image" src="https://github.com/user-attachments/assets/0879ccb2-0522-4bd0-88d9-b9ab897d6c1c" />
 
+- For each band:
+
+ - Fit slope (fit_slope).
+
+ - Classify noise type (classify_noise_type).
+
+ - Plot fitted line (loglog) on top of PSD.
+
 
 **Output:**
 
