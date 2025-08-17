@@ -325,6 +325,7 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
    Measures how well the model explains variance in the data.
    - 1.0 = perfect prediction
    - 0 = no better than mean prediction
+     
 **Results shown:**
 
 **Temperature:** 
@@ -342,3 +343,30 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 **Mag_Z:**
 - MSE = 0.0002, RMSE ≈ 0.0153, MAE = 0.0002, R² ≈ 0.9809
 - Excellent performance.
+
+### visualize the model's performance
+<img width="1706" height="423" alt="image" src="https://github.com/user-attachments/assets/29d00f8c-e6fd-40e8-b04a-60a4288c25b5" />
+
+**Insights:**
+
+**Temperature:**
+- Points lie almost exactly on the line.
+- Indicates near-perfect predictions (R² ≈ 1.0 as seen earlier).
+  
+**Mag_X:**
+- Predictions follow the line closely but with some spread.
+- A few outliers are visible, but overall performance is still strong (R² ≈ 0.9891).
+
+**Mag_Y:**
+- Strong alignment with the diagonal but more scattered than Mag_X.
+- Some deviations (outliers) exist, which explains why R² is slightly lower (≈ 0.9312).
+
+**Mag_Z:**
+- Predictions are mostly close to the line, but noticeable scatter and outliers appear.
+- Explains why R² is lower compared to Temperature and Mag_X (≈ 0.9809).
+
+### actual vs. predicted values(By RandomForestRegressor model)
+<img width="921" height="343" alt="image" src="https://github.com/user-attachments/assets/8e6f8a0f-7587-40da-8af2-f457e317fbc5" />
+
+### K-Nearest Neighbors (KNN)
+
