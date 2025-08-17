@@ -87,7 +87,7 @@ The analysis and modeling were implemented in Python, widely adopted for scienti
 - Joblib was used for efficient model serialization to enable reuse in deployment stages.
 
 ### Noise Characterization
-To understand the characteristics of sensor noise, two methods were used:
+To understand the characteristics of sensor noise, Power Spectral Density (PSD) Analysis:
 
 **1. Power Spectral density**
 
