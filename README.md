@@ -203,7 +203,47 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 <img width="881" height="470" alt="image" src="https://github.com/user-attachments/assets/e08c9d7c-25a4-4ee3-a726-72a8499322ad" />
 
+Key Observations:
 
+1. 25 Hz Sampling
+
+- AccHR_X & AccHR_Y
+
+  - Slopes ≈ -1.0 to -1.3 across bands → pink noise (1/f) dominates.
+
+  - This means system variability mostly follows correlated (not random) fluctuations.
+
+- AccHR_Z
+
+  - Low slope ≈ -0.7 → closer to pink noise.
+
+  - Mid slope ≈ -0.18 → almost white noise (flat region).
+
+  - High slope ≈ -0.68 → back to pink noise.
+
+  - So Z-axis mixes both pink + white noise.
+    
+2. 50 Hz Sampling
+
+  - AccHR_X
+
+    - Low slope ≈ -1.58 → Brownian noise (1/f²) at low freq (drift).
+
+    - Mid slope ≈ -0.93 → pink noise.
+
+    - High slope ≈ -0.48 → tending to white noise.
+
+    - Interpretation: Long-term drift + short-term randomness.
+
+ - AccHR_Y
+
+   - Slopes ≈ -1.3 to -1.4 → pink noise dominates (strong correlation).
+
+   - High freq slope ≈ -0.95 → still pink noise.
+
+- AccHR_Z
+
+   - Slopes ≈ -0.99 to -0.51 → all pink noise with weak correlation at higher band.   
 
 
 
