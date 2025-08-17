@@ -299,9 +299,33 @@ This approach yields a smoother, more reliable PSD compared to a single FFT.
 
 ### Import RandomForestRegressor model
 
+Random Forest is an ensemble learning algorithm that builds multiple decision trees on random subsets of data and averages or votes their results. This makes it accurate, reduces overfitting, and works well for both classification and regression tasks.
 
+<img width="446" height="140" alt="image" src="https://github.com/user-attachments/assets/a388e919-071f-45a6-9ca9-ad549bbd1efe" />
 
+- n_estimators=100: Builds 100 decision trees in the forest.
 
+- random_state=42: Ensures reproducibility of results.
 
- 
+- fit(X_train, y_train): Trains the model on input features (X_train) and target values (y_train).
 
+### Calculate evaluation metrics
+1. MSE (Mean Squared Error):
+   
+Average squared difference between predicted and actual values. Lower = better.
+
+3. RMSE (Root Mean Squared Error):
+   
+Square root of MSE. Easier to interpret because it has the same unit as the target variable.
+
+5. MAE (Mean Absolute Error):
+   
+Average absolute difference between predicted and actual values. Lower = better.
+
+7. R² (Coefficient of Determination):
+   
+Measures how well the model explains variance in the data.
+
+- 1.0 = perfect prediction
+  
+- 0 = no better than mean prediction
