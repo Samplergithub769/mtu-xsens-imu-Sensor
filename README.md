@@ -309,7 +309,7 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 
 - fit(X_train, y_train): Trains the model on input features (X_train) and target values (y_train).
 
-### Calculate evaluation metrics
+### Calculate evaluation metrics(RandomForestRegressor model)
 <img width="293" height="363" alt="image" src="https://github.com/user-attachments/assets/c03bb9d6-40b1-477e-9c8a-35d6e52d0529" />
 
 **1. MSE (Mean Squared Error):**
@@ -344,7 +344,7 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 - MSE = 0.0002, RMSE ≈ 0.0153, MAE = 0.0002, R² ≈ 0.9809
 - Excellent performance.
 
-### visualize the model's performance
+### visualize the model's performance(RandomForestRegressor model)
 <img width="1706" height="423" alt="image" src="https://github.com/user-attachments/assets/29d00f8c-e6fd-40e8-b04a-60a4288c25b5" />
 
 **Insights:**
@@ -370,4 +370,12 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 <img width="921" height="343" alt="image" src="https://github.com/user-attachments/assets/8e6f8a0f-7587-40da-8af2-f457e317fbc5" />
 
 ### K-Nearest Neighbors (KNN)
+
+<img width="377" height="173" alt="image" src="https://github.com/user-attachments/assets/c002d0d4-418c-466f-b6b8-04fd33621b87" />
+
+- It standardizes features by removing the mean and scaling to unit variance.
+- <img width="632" height="250" alt="image" src="https://github.com/user-attachments/assets/b7a181ba-4267-4a4b-9ac4-b8f48d819618" />
+
+
+
 
