@@ -363,7 +363,7 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 ### actual vs. predicted values(By RandomForestRegressor model)
 <img width="921" height="343" alt="image" src="https://github.com/user-attachments/assets/8e6f8a0f-7587-40da-8af2-f457e317fbc5" />
 
-### Import K-Nearest Neighbors (KNN) model
+###  Import K-Nearest Neighbors (KNN) Regressor
 
 <img width="377" height="173" alt="image" src="https://github.com/user-attachments/assets/c002d0d4-418c-466f-b6b8-04fd33621b87" />
 
