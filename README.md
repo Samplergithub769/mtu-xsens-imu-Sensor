@@ -464,10 +464,10 @@ Conclusion: Predictions for Mag_Z are acceptable but less strong.
 
 **2. KNN:**
 
-     - Performs almost perfectly for Temperature (smooth data).
+  -  Performs almost perfectly for Temperature (smooth data).
     
-     - Accuracy drops significantly for magnetometer axes (sensitive to large dataset, noise and local fluctuations).
+  - Accuracy drops significantly for magnetometer axes (sensitive to large dataset, noise and local fluctuations).
      
-     - Strongly dependent on proper scaling and the choice of k.
+  - Strongly dependent on proper scaling and the choice of k.
      
      
