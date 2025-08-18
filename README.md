@@ -374,7 +374,8 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 <img width="377" height="173" alt="image" src="https://github.com/user-attachments/assets/c002d0d4-418c-466f-b6b8-04fd33621b87" />
 
 - It standardizes features by removing the mean and scaling to unit variance.
-- <img width="632" height="250" alt="image" src="https://github.com/user-attachments/assets/b7a181ba-4267-4a4b-9ac4-b8f48d819618" />
+
+<img width="632" height="250" alt="image" src="https://github.com/user-attachments/assets/b7a181ba-4267-4a4b-9ac4-b8f48d819618" />
 
 
 
