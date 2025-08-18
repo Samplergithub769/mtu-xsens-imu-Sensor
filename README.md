@@ -325,46 +325,41 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
    Measures how well the model explains variance in the data.
    - 1.0 = perfect prediction
    - 0 = no better than mean prediction
-     
-**Results shown:**
 
 **Temperature:** 
-- MSE = 0.0001, RMSE ≈ 0.0077, MAE = 0.0002, R² = 1.0000
+- MSE = 0.0001, RMSE = 0.0077, MAE = 0.0002, R² = 1.0000
 - Excellent fit (almost perfect).
 
 **Mag_X:**
-- MSE = 0.0002, RMSE ≈ 0.0130, MAE = 0.0002, R² ≈ 0.9891
+- MSE = 0.0002, RMSE = 0.0130, MAE = 0.0002, R² = 0.9891
 - Very high accuracy.
 
 **Mag_Y:**
-- MSE = 0.0005, RMSE ≈ 0.0215, MAE = 0.0002, R² ≈ 0.9312
+- MSE = 0.0005, RMSE = 0.0215, MAE = 0.0002, R² = 0.9312
 - Still very good but slightly less accurate than Mag_X.
 
 **Mag_Z:**
-- MSE = 0.0002, RMSE ≈ 0.0153, MAE = 0.0002, R² ≈ 0.9809
+- MSE = 0.0002, RMSE = 0.0153, MAE = 0.0002, R² = 0.9809
 - Excellent performance.
 
 ### visualize the model's performance(RandomForestRegressor model)
 <img width="1706" height="423" alt="image" src="https://github.com/user-attachments/assets/29d00f8c-e6fd-40e8-b04a-60a4288c25b5" />
 
-**Insights:**
-
-**Temperature:**
+**1. Temperature:**
 - Points lie almost exactly on the line.
-- Indicates near-perfect predictions (R² ≈ 1.0).
+- Indicates near-perfect predictions (R² = 1.0).
   
-**Mag_X:**
+**2. Mag_X:**
 - Predictions follow the line closely but with some spread.
-- A few outliers are visible, but overall performance is still strong (R² ≈ 0.9891).
+- A few outliers are visible, but overall performance is still strong (R² = 0.9891).
 
-**Mag_Y:**
+**3. Mag_Y:**
 - Strong alignment with the diagonal but more scattered than Mag_X.
-- Some deviations (outliers) exist, which explains why R² is slightly lower (≈ 0.9312).
+- Some deviations (outliers) exist, which explains why R² is slightly lower (= 0.9312).
 
-**Mag_Z:**
+**4. Mag_Z:**
 - Predictions are mostly close to the line, but noticeable scatter and outliers appear.
-- R² is lower compared to Temperature and Mag_X (≈ 0.9809).
-
+- R² is lower compared to Temperature and Mag_X (= 0.9809).
 
 ### actual vs. predicted values(By RandomForestRegressor model)
 <img width="921" height="343" alt="image" src="https://github.com/user-attachments/assets/8e6f8a0f-7587-40da-8af2-f457e317fbc5" />
@@ -374,9 +369,98 @@ Random Forest is an ensemble learning algorithm that builds multiple decision tr
 <img width="377" height="173" alt="image" src="https://github.com/user-attachments/assets/c002d0d4-418c-466f-b6b8-04fd33621b87" />
 
 - It standardizes features by removing the mean and scaling to unit variance.
-
 <img width="632" height="250" alt="image" src="https://github.com/user-attachments/assets/b7a181ba-4267-4a4b-9ac4-b8f48d819618" />
 
+<img width="504" height="190" alt="image" src="https://github.com/user-attachments/assets/69a9ab03-80ed-42a5-af53-c66031e84ba8" />
+
+K-Nearest Neighbors (KNN) is a non-parametric, distance-based algorithm that predicts outcomes by averaging the values of the k closest neighbors in the feature space. In the code, a KNN Regressor with 5 neighbors is initialized, trained on scaled training data, and used to make predictions on scaled test data. Scaling is essential since KNN relies on distance for neighbor selection.
+
+### Calculate evaluation metrics(KNN model)
+**1. Temperature Prediction**
+
+MSE: 0.0017, Very low error.
+
+RMSE: 0.0408, The predictions are off by ~0.04 units on average.
+
+MAE: 0.0010, Practically negligible error.
+
+R²: 0.9999, Almost perfect fit (model explains ~99.99% of variance).
+
+Conclusion: KNN predicts temperature extremely well with near-perfect accuracy.
+
+**2. Magnetometer X (Mag_X)**
+
+MSE: 0.0020
+
+RMSE: 0.0449
+
+MAE: 0.0007
+
+R²: 0.8699, Strong fit (87% variance explained).
+
+Conclusion: Predictions for Mag_X are very accurate and reliable.
+
+**3. Magnetometer Y (Mag_Y)**
+
+MSE: 0.0022
+
+RMSE: 0.0467
+
+MAE: 0.0007
+
+R²: 0.6768, Moderate fit (only 67% variance explained).
+
+Conclusion: The model struggles more with Mag_Y, showing higher unexplained variance.
+
+**4. Magnetometer Z (Mag_Z)**
+
+MSE: 0.0029
+
+RMSE: 0.0538
+
+MAE: 0.0006
+
+R²: 0.7638, Decent fit (76% variance explained), but weaker compared to Temp and Mag_X.
+
+Conclusion: Predictions for Mag_Z are acceptable but less strong.
+
+### visualize the model's performance(KNN Model)
+
+<img width="1688" height="430" alt="image" src="https://github.com/user-attachments/assets/6aee306d-03e3-421e-9756-7d78b8a60407" />
+
+**1. Temperature (KNN)**
+
+   - Points lie almost perfectly along the diagonal line.
+   - Very little scatter, predictions almost identical to actual values.
+
+**2. Mag_X (KNN)**
+
+  - Points generally follow the diagonal, but there is moderate scatter around the line.
+  - Some deviations for negative and positive values.
+  - Matches numerical result (R² ≈ 0.87) → good but not perfect.
+
+**3. Mag_Y (KNN)**
+  - Scatter is higher compared to Mag_X.
+  - Many points deviate significantly from the diagonal, especially in mid-range values.
+  - Consistent with R² ≈ 0.67 → weaker fit.
+
+**4. Mag_Z (KNN)**
+  - Shows the highest scatter of all three magnetometer axes.
+  - Large deviations, especially for negative values.
+  - Matches R² = 0.76, confirming only moderate reliability.
+
+### actual vs. predicted values(KNN model)
+<img width="1040" height="345" alt="image" src="https://github.com/user-attachments/assets/3aedc707-d7e3-40a9-b7a2-7c614ae721ea" />
 
 
+### comparison of RandomForestRegressor vs. KNN Regressor
 
+**1. Random Forest:**
+  - Consistently high accuracy across all variables.
+  - Handles noisy/complex data (like Magnetometer signals) much better.
+  - Less prone to overfitting due to ensemble averaging.
+
+**2. KNN:**
+    - Performs almost perfectly for Temperature (smooth data).
+    - Accuracy drops significantly for magnetometer axes (sensitive to large dataset, noise and local fluctuations).
+    - Strongly dependent on proper scaling and the choice of k.
