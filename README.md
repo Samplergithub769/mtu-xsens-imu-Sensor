@@ -455,11 +455,13 @@ Conclusion: Predictions for Mag_Z are acceptable but less strong.
 ### comparison of RandomForestRegressor vs. KNN Regressor
 
 **1. Random Forest:**
+
   - Consistently high accuracy across all variables.
   - Handles noisy/complex data (like Magnetometer signals) much better.
   - Less prone to overfitting due to ensemble averaging.
 
 **2. KNN:**
+
     - Performs almost perfectly for Temperature (smooth data).
     - Accuracy drops significantly for magnetometer axes (sensitive to large dataset, noise and local fluctuations).
     - Strongly dependent on proper scaling and the choice of k.
