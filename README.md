@@ -81,9 +81,9 @@ This resulted in six datasets for robust comparative analysis.
 ### Tools and Libraries used:
 The analysis and modeling were implemented in Python, widely adopted for scientific computing due to its open-source ecosystem and extensive library support.
 - Pandas and NumPy were used for structured data handling and high-performance numerical computations.
-- Matplotlib and Seaborn facilitated time-series visualization.
+- Matplotlib is used for visualization.
 - Scikit-learn supported machine learning workflows, including model training, scaling, and evaluation metrics.
-- Joblib was used for efficient model serialization to enable reuse in deployment stages.
+- Joblib is used for efficient model serialization to enable reuse in deployment stages.
 
 ### Combine clean and noisy data with labels and frequency information
 
